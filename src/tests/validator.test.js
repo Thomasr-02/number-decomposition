@@ -9,9 +9,6 @@ describe('Should validate incorrectly output', () => {
     expect(() => validator("string")).toThrowError('Entrada não é um número');
   });
 
-  it('When validator receive not integer, should trow an error', () => {
-    expect(() => validator("1.5")).toThrowError('Entrada não é um número inteiro');
-  })
   it('When validator receive negative number, should trow an error', () => {
     expect(() => validator("-3")).toThrowError('Entrada não pode ser negativa');
   })
